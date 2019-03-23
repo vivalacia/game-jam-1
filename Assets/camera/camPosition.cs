@@ -43,6 +43,7 @@ public class camPosition : MonoBehaviour
     }
 
     // Update is called once per frame
+    [ExecuteInEditMode]
     void Update()
     {
         setCamPosition();
