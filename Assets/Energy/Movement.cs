@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.Analytics;
 
 public class Movement : MonoBehaviour
-{
-	
+{   [SerializeField]
+    Camera cam;
 	Rigidbody2D _rgb2D;
 	Dictionary<string , float> states = new Dictionary<string, float >();
 	private string _stay = "_stay";
@@ -17,11 +17,11 @@ public class Movement : MonoBehaviour
 	private float _time;
 	private float _lastTime = 0;
 	[SerializeField]
-	[Range(0, 3)] private float _firstVel;
+	[Range(1, 3)] private float _firstVel = 1;
 	[SerializeField]
-	[Range(3, 6)] private float _secondVel;
+	[Range(3, 6)] private float _secondVel = 3;
 	[SerializeField]
-	[Range(6, 12)] private float _thirdVel;
+	[Range(6, 12)] private float _thirdVel = 6;
 	
 	void Start()
 	{
@@ -39,8 +39,8 @@ public class Movement : MonoBehaviour
 	{
 		
 		if (Input.GetMouseButtonUp(0))
-		{
-			Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        { 
+			Vector3 mouse = cam.ScreenToWorldPoint(Input.mousePosition);
 			Vector2 m = mouse;
 			Vector2 myVec =  m - (Vector2)this.transform.position;
 			move(myVec);
