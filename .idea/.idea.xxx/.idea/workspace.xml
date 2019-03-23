@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b699cde6-8ddf-483c-9d2a-1f281a14add1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xxx/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xxx/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xxx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xxx/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/30/30749ad6bd34e2d42bdb7087811a963a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/30/30749ad6bd34e2d42bdb7087811a963a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/74/74d2fffeac3941941bcb68a8eeb96167" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/74/74d2fffeac3941941bcb68a8eeb96167" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/90/90df3708e3fdc294ab2b4512aa3e2be6" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/90/90df3708e3fdc294ab2b4512aa3e2be6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e2/e257a95156c8fb44b824399e571e49eb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e2/e257a95156c8fb44b824399e571e49eb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxx.sln" beforeDir="false" afterPath="$PROJECT_DIR$/xxx.sln" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,29 +34,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Energy/Movement.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-              <folding>
-                <marker date="1553373104566" expanded="false" signature="6:126" ph="..." />
-                <marker date="1553373104566" expanded="true" signature="165:2539" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="673:902" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="923:1172" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="962:1138" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="1175:1359" ph="/* private void OnMouseDown() ... */" />
-                <marker date="1553373104566" expanded="true" signature="1389:1585" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="1619:1768" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="1656:1765" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="1787:1889" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="1909:2034" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="1964:2018" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2055:2260" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2087:2118" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2155:2187" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2221:2254" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2283:2536" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2364:2396" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2457:2491" ph="{...}" />
-                <marker date="1553373104566" expanded="true" signature="2500:2532" ph="{...}" />
-              </folding>
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -154,7 +138,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9013000" />
+    <option name="totallyTimeSpent" value="9465000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -217,29 +201,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Energy/Movement.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-          <folding>
-            <marker date="1553373104566" expanded="false" signature="6:126" ph="..." />
-            <marker date="1553373104566" expanded="true" signature="165:2539" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="673:902" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="923:1172" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="962:1138" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="1175:1359" ph="/* private void OnMouseDown() ... */" />
-            <marker date="1553373104566" expanded="true" signature="1389:1585" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="1619:1768" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="1656:1765" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="1787:1889" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="1909:2034" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="1964:2018" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2055:2260" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2087:2118" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2155:2187" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2221:2254" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2283:2536" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2364:2396" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2457:2491" ph="{...}" />
-            <marker date="1553373104566" expanded="true" signature="2500:2532" ph="{...}" />
-          </folding>
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
         </state>
       </provider>
     </entry>
