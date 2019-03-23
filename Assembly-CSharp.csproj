@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Energy\movement.cs" />
-     <Compile Include="Assets\Energy\newS.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/home/mrbartek/unity-projects/xxx/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
