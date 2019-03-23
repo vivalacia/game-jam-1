@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\camera\camPosition.cs" />
      <Compile Include="Assets\Energy\movement.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/home/mrbartek/unity-projects/xxx/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
