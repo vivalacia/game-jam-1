@@ -29,7 +29,7 @@ public class PlayerInput : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         float xMovementAxis = Input.GetAxis("Joy" + playerNum + "X");
         float yMovementAxis = Input.GetAxis("Joy" + playerNum + "Y");
@@ -41,8 +41,21 @@ public class PlayerInput : MonoBehaviour
         Vector2 dir = new Vector2(xMovementAxis, -yMovementAxis);
 
         playerMovement.Move(dir);
-        
 
-        
+
+        if (Mathf.Abs(Input.GetAxis("Joy" + playerNum + "AttackDash")) > 0.2f)
+        {
+            if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0)
+            {
+                Debug.Log("1");
+            }
+            else if (Input.GetAxis("Joy" + playerNum + "AttackDash") < 0)
+            {
+                Debug.Log("-1");
+            }
+        }
+
+
+
     }
 }
