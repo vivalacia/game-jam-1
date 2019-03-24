@@ -14,6 +14,7 @@
         </e>
         <e p="player" t="Include">
           <e p="Player.cs" t="Include" />
+          <e p="PlayerAttack.cs" t="Include" />
           <e p="PlayerDef.cs" t="Include" />
           <e p="PlayerInput.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
