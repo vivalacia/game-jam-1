@@ -63,6 +63,7 @@
     <Compile Include="Assets\camera\camPosition.cs" />
     <Compile Include="Assets\Energy\Movement.cs" />
     <Compile Include="Assets\player\Player.cs" />
+    <Compile Include="Assets\player\PlayerAttack.cs" />
     <Compile Include="Assets\player\PlayerInput.cs" />
     <Compile Include="Assets\player\PlayerMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

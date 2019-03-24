@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(Vector2 dir)
     {
-        Debug.Log("move: " + dir);
+        //Debug.Log("move: " + dir);
         movementDirection = dir;
     }
 }
