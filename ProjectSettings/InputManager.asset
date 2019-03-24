@@ -406,22 +406,6 @@ InputManager:
     axis: 3
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Joy1AttackLinux
-    descriptiveName: 
-    descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
-    altNegativeButton: 
-    altPositiveButton: 
-    gravity: 1
-    dead: 0.001
-    sensitivity: 1
-    snap: 1
-    invert: 0
-    type: 2
-    axis: 5
-    joyNum: 1
-  - serializedVersion: 3
     m_Name: Joy2AimX
     descriptiveName: 
     descriptiveNegativeName: 
@@ -438,7 +422,7 @@ InputManager:
     axis: 3
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Joy2Y
+    m_Name: "2\x13"
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -451,10 +435,10 @@ InputManager:
     snap: 1
     invert: 0
     type: 2
-    axis: 1
+    axis: 5
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Joy2Y
+    m_Name: 1
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -467,10 +451,10 @@ InputManager:
     snap: 1
     invert: 0
     type: 2
-    axis: 1
-    joyNum: 2
+    axis: 5
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: Joy2Y
+    m_Name: Joy1AimY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -483,5 +467,5 @@ InputManager:
     snap: 1
     invert: 0
     type: 2
-    axis: 1
-    joyNum: 2
+    axis: 4
+    joyNum: 1
