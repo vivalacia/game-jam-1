@@ -52,13 +52,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Mathf.Abs(Input.GetAxis("Joy" + playerNum + "AttackDash")) > 0.2f)
         {
-<<<<<<< HEAD
-            if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0)
-            {
-            }
-            else if (Input.GetAxis("Joy" + playerNum + "AttackDash") < 0)
-            {
-=======
+
             if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0 && !attacked)
             {
                 float aimDir = Input.GetAxis("Joy" + playerNum + "AimX");
@@ -75,7 +69,7 @@ public class PlayerInput : MonoBehaviour
                     aimInt = -1;
                 }
                 playerAttack.Attack(aimInt);
->>>>>>> julek
+
             }
             
         }

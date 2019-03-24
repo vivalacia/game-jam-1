@@ -29,10 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(Vector2 dir)
     {
-<<<<<<< HEAD
-=======
-        //Debug.Log("move: " + dir);
->>>>>>> julek
+
         movementDirection = dir;
     }
 }
