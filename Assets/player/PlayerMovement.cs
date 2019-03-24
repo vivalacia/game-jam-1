@@ -25,14 +25,13 @@ public class PlayerMovement : MonoBehaviour
     {
 
         transform.Translate(movementDirection * movementSpeed);
-        Debug.Log(movementDirection.x * movementSpeed);
+        //Debug.Log(movementDirection.x * movementSpeed);
         animator.SetFloat("move", Mathf.Abs(movementDirection.x * movementSpeed * 10));
 
     }
 
     public void Move(Vector2 dir)
     {
-
         movementDirection = dir;
     }
 }
