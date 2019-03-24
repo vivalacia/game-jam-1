@@ -528,6 +528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftStickOffset: 0.1
+  rightStickOffset: 0.2
   playerMovement: {fileID: 0}
 --- !u!114 &1943452104
 MonoBehaviour:
@@ -566,7 +567,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943452101}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 647d3e8e77263092c968e308072066cc, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 714865c49ebeece49b8875c0c1a3629b, type: 3}
+>>>>>>> julek
   m_Name: 
   m_EditorClassIdentifier: 
   layer:
