@@ -34,7 +34,8 @@ public class PlayerAttack : MonoBehaviour
         ball = Physics2D.OverlapBox(colliderOffset, colliderSize, 0, layer);
 
 
-        Movement ballMovement = ball.GetComponentInParent<Movement>();
+        Movement ballMovement = null;
+        if(ball) ballMovement = ball.GetComponentInParent<Movement>();
 
         if(ball != null)
         {

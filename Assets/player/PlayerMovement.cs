@@ -10,12 +10,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     [Range(0.05f, 1)]
     float movementSpeed;
+
+    Animator animator;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     {
 
         transform.Translate(movementDirection * movementSpeed);
-
+        //Debug.Log(movementDirection.x * movementSpeed);
+        animator.SetFloat("move", Mathf.Abs(movementDirection.x * movementSpeed * 10));
 
     }
 

@@ -78,7 +78,7 @@ public class Movement : MonoBehaviour
 		{
 			reduceState();
 			slowDown();
-			Debug.Log("my state : " + _lastState);
+			//Debug.Log("my state : " + _lastState);
 			_lastTime = Time.time;
 		}
 	}
