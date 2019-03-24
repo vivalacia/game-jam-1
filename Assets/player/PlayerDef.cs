@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Xml.Schema;
 using UnityEngine;
+using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
 public class PlayerDef : MonoBehaviour
@@ -16,30 +18,31 @@ public class PlayerDef : MonoBehaviour
    // private int dir = 0;
     private float globalDir = 0;
     private Movement ball_movement;
+    private bool stuned = false;
+    private float stunTime = 0;
+    PlayerMovement mov;
+    private float time = 0;
 
-    private string ballState;
+    private string ballState = "";
     // Start is called before the first frame update
     void Start()
     {
-        
+        mov = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
-        /*if (Input.GetMouseButtonDown(1))
+
+        if (stuned)
         {
-            dir = 1;
-            def();
+            if (Time.time - time >= stunTime)
+            {
+                stuned = false;
+            }
+            mov.Move(new Vector2(0,0));
         }
-
-        else if (Input.GetMouseButtonDown(2))
-        {
-            dir = -1;
-            def();
-        }*/
-
+        
         
     }
 
@@ -59,7 +62,24 @@ public class PlayerDef : MonoBehaviour
             if (ball_collider)
             {
                 ball_movement = ball_collider.GetComponentInParent<Movement>();
+                ballState = ball_movement.getState();
+                var hurtLevel = ball_movement.checkState();
+                
+                if (ballState == "_third" || ballState == "_second")
+                {   
+                    hurtPlayer(hurtLevel);
+                }
+
+                if (ballState == "_third")
+                {
+                    stunTime = hurtLevel;
+                    time = Time.time;
+                    stuned = true;
+                    
+                }
+
                 ball_movement.bounce();
+
             }
         }
 
@@ -67,10 +87,18 @@ public class PlayerDef : MonoBehaviour
 
     }
 
-    void stun()
+    void hurtPlayer(float hurtLv)
     {
-        PlayerMovement mov;
+        Vector2 translator = ball_movement.getRb().velocity.normalized * hurtLv;
+        this.transform.Translate(translator);
     }
+
+    void disableArmor()
+    {
+        
+    }
+
+  
 
     private void OnDrawGizmos()
     {

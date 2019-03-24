@@ -88,7 +88,7 @@ public class Movement : MonoBehaviour
 		 var velocity = checkState();
 		_rgb2D.velocity = this._rgb2D.velocity.normalized * velocity;
 	}
-	float checkState()
+	public float checkState()
 	{
 		foreach(KeyValuePair<string, float> el in states)
 		{

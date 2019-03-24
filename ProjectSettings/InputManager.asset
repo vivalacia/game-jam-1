@@ -406,7 +406,7 @@ InputManager:
     axis: 3
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Joy2Y
+    m_Name: Joy1AttackLinux
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -419,8 +419,8 @@ InputManager:
     snap: 1
     invert: 0
     type: 2
-    axis: 1
-    joyNum: 2
+    axis: 5
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Joy2Y
     descriptiveName: 

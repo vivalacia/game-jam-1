@@ -53,10 +53,61 @@ public class PlayerInput : MonoBehaviour
         playerMovement.Move(dir);
 
 
-        if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0.2f)
+//        if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0.2f)
+//        {
+//            deffed = false;
+//            if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0 && !attacked)
+//            {
+//                float aimDir = Input.GetAxis("Joy" + playerNum + "AimX");
+//                int aimInt = 0;
+//
+//                if (aimDir - rightStickOffset > 0)
+//                {
+//                    attacked = true;
+//                    aimInt = 1;
+//                }
+//                else if (aimDir + rightStickOffset < 0)
+//                {
+//                    attacked = true;
+//                    aimInt = -1;
+//                }
+//                playerAttack.Attack(aimInt);
+//
+//            }
+//            
+//        }
+
+//        else if (Input.GetAxis("Joy" + playerNum + "AttackDash") < -0.2f)
+//        {
+//            
+//            attacked = false;
+//
+//            if (Input.GetAxis("Joy" + playerNum + "AttackDash") < 0 && !deffed)
+//            {
+//
+//                
+//                float aimDir = Input.GetAxis("Joy" + playerNum + "AimX");
+//                int aimInt = 0;
+//
+//                if (aimDir - rightStickOffset > 0)
+//                {
+//                    deffed = true;
+//                    aimInt = 1;
+//                }
+//                else if (aimDir + rightStickOffset < 0)
+//                {
+//                    deffed = true;
+//                    aimInt = -1;
+//                }
+//                Debug.Log("exec player def");
+//                playerDef.def(aimInt);
+//            }
+//        }
+
+        if (Input.GetAxis("Joy" + playerNum + "AttackLinux") > 0.2f)
         {
             deffed = false;
-            if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0 && !attacked)
+            if (Input.GetAxis("Joy" + playerNum + "AttackLinux") > 0 && !attacked)
             {
                 float aimDir = Input.GetAxis("Joy" + playerNum + "AimX");
                 int aimInt = 0;
@@ -76,12 +127,12 @@ public class PlayerInput : MonoBehaviour
             }
             
         }
-        else if (Input.GetAxis("Joy" + playerNum + "AttackDash") < -0.2f)
+        else if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0.2f)
         {
             
             attacked = false;
 
-            if (Input.GetAxis("Joy" + playerNum + "AttackDash") < 0 && !deffed)
+            if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0 && !deffed)
             {
 
                 
