@@ -98,6 +98,11 @@ public class Movement : MonoBehaviour
 		return 0;
 	}
 
+	public void bounce()
+	{
+		_rgb2D.velocity = this._rgb2D.velocity * -1;
+	}
+
 	void reduceState()
 	{
 
@@ -139,5 +144,11 @@ public class Movement : MonoBehaviour
 		}
 
 	}
+
+	public string getState()
+	{
+		return _lastState;
+	}
+
 
 }

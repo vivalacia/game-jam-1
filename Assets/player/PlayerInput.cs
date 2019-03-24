@@ -24,7 +24,6 @@ public class PlayerInput : MonoBehaviour
         }
         else
         {
-            Debug.Log("There is no Player object assigned");
         }
     }
 
@@ -47,11 +46,9 @@ public class PlayerInput : MonoBehaviour
         {
             if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0)
             {
-                Debug.Log("1");
             }
             else if (Input.GetAxis("Joy" + playerNum + "AttackDash") < 0)
             {
-                Debug.Log("-1");
             }
         }
 
