@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
 //	}
 		
 	
-	void move(Vector2 vec) 
+	public void move(Vector2 vec) 
 	{
 			_lastTime = Time.time;
 			upgradeState();
@@ -103,6 +103,8 @@ public class Movement : MonoBehaviour
 		_rgb2D.velocity = this._rgb2D.velocity * -1;
 	}
 
+    
+
 	void reduceState()
 	{
 
@@ -124,7 +126,7 @@ public class Movement : MonoBehaviour
 	}
 
 
-	void upgradeState()
+	public void upgradeState()
 	{
 
 		if (_lastState != _third && _lastState != _second && _lastState != _first)
@@ -149,6 +151,11 @@ public class Movement : MonoBehaviour
 	{
 		return _lastState;
 	}
+
+    public Rigidbody2D getRb()
+    {
+        return _rgb2D;
+    }
 
 
 }

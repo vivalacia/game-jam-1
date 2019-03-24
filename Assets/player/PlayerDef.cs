@@ -11,8 +11,9 @@ public class PlayerDef : MonoBehaviour
 
     public LayerMask layer;
     private Collider2D ball_collider;
-    private float offset;
-    private int dir = 0;
+    const float offset = 0.5f;
+    UnityEngine.Vector2 colliderSize = new UnityEngine.Vector2(2 * offset, 3);
+   // private int dir = 0;
     private float globalDir = 0;
     private Movement ball_movement;
 
@@ -27,7 +28,7 @@ public class PlayerDef : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetMouseButtonDown(1))
+        /*if (Input.GetMouseButtonDown(1))
         {
             dir = 1;
             def();
@@ -37,19 +38,21 @@ public class PlayerDef : MonoBehaviour
         {
             dir = -1;
             def();
-        }
+        }*/
 
         
     }
 
-    void def()
+    public void def(int dir)
     {
+        Debug.Log("dir: " + dir + 1);
         if (dir != 0)
         {
+            Debug.Log(dir + " " + globalDir);
             globalDir = dir;
             ball_collider = Physics2D.OverlapBox(
-                new Vector3(this.transform.position.x + globalDir, this.transform.position.y, 0)
-                , new UnityEngine.Vector2(1, 3)
+                new Vector3(this.transform.position.x + globalDir * offset, this.transform.position.y, 0)
+                , colliderSize
                 , 0, layer);
 
 
@@ -72,6 +75,6 @@ public class PlayerDef : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(new Vector3(this.transform.position.x + globalDir, this.transform.position.y , 0), new Vector3(1,3,0));
+        Gizmos.DrawWireCube(new Vector3(this.transform.position.x + globalDir * offset, this.transform.position.y , 0), colliderSize);
     }
 }

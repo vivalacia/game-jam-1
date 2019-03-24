@@ -15,8 +15,10 @@ public class PlayerInput : MonoBehaviour
     int playerNum;
 
     PlayerAttack playerAttack;
+    PlayerDef playerDef;
 
     bool attacked = false;
+    bool deffed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,7 @@ public class PlayerInput : MonoBehaviour
         player = GetComponent<Player>();
 
         playerAttack = GetComponent<PlayerAttack>();
+        playerDef = GetComponent<PlayerDef>();
 
         if(player != null)
         {
@@ -50,9 +53,9 @@ public class PlayerInput : MonoBehaviour
         playerMovement.Move(dir);
 
 
-        if (Mathf.Abs(Input.GetAxis("Joy" + playerNum + "AttackDash")) > 0.2f)
+        if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0.2f)
         {
-
+            deffed = false;
             if (Input.GetAxis("Joy" + playerNum + "AttackDash") > 0 && !attacked)
             {
                 float aimDir = Input.GetAxis("Joy" + playerNum + "AimX");
@@ -73,14 +76,36 @@ public class PlayerInput : MonoBehaviour
             }
             
         }
-        else if (Mathf.Abs(Input.GetAxis("Joy" + playerNum + "AttackDash")) < 0.2f)
+        else if (Input.GetAxis("Joy" + playerNum + "AttackDash") < -0.2f)
         {
-            //player def
+            
             attacked = false;
+
+            if (Input.GetAxis("Joy" + playerNum + "AttackDash") < 0 && !deffed)
+            {
+
+                
+                float aimDir = Input.GetAxis("Joy" + playerNum + "AimX");
+                int aimInt = 0;
+
+                if (aimDir - rightStickOffset > 0)
+                {
+                    deffed = true;
+                    aimInt = 1;
+                }
+                else if (aimDir + rightStickOffset < 0)
+                {
+                    deffed = true;
+                    aimInt = -1;
+                }
+                Debug.Log("exec player def");
+                playerDef.def(aimInt);
+            }
         }
         else
         {
             attacked = false;
+            deffed = false;
         }
 
 
